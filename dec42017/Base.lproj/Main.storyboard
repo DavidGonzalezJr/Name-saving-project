@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,32 +15,32 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dec42017" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YQb-65-ANb">
-                                <rect key="frame" x="10" y="30" width="355" height="647"/>
+                                <rect key="frame" x="10" y="10" width="647" height="165"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6C-Lw-zcn">
-                                <rect key="frame" x="134" y="516" width="107" height="30"/>
+                                <rect key="frame" x="280" y="496" width="107" height="30"/>
                                 <state key="normal" title="Add New Name"/>
                                 <connections>
                                     <action selector="goToSecondWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oku-Ui-rbA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcf-Pg-MiZ">
-                                <rect key="frame" x="134" y="554" width="107" height="30"/>
+                                <rect key="frame" x="280" y="534" width="107" height="30"/>
                                 <state key="normal" title="Default Name"/>
                                 <connections>
                                     <action selector="goToSecondWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b8x-WI-orb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBS-B4-fAM">
-                                <rect key="frame" x="134" y="592" width="107" height="30"/>
+                                <rect key="frame" x="280" y="572" width="107" height="30"/>
                                 <state key="normal" title="Last Name"/>
                                 <connections>
                                     <action selector="goToSecondWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9RV-qc-XHz"/>
@@ -50,14 +50,23 @@
                                 <rect key="frame" x="280" y="220" width="107" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="Add New Name"/>
                                 <state key="normal" title="Add New Name"/>
+                                <connections>
+                                    <action selector="goToSecondWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q2u-Jx-QUC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDf-db-6zm">
                                 <rect key="frame" x="280" y="258" width="107" height="30"/>
                                 <state key="normal" title="Default Name"/>
+                                <connections>
+                                    <action selector="goToSecondWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OOt-qI-x96"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3n0-uw-nfd">
                                 <rect key="frame" x="280" y="296" width="107" height="30"/>
                                 <state key="normal" title="Last Name"/>
+                                <connections>
+                                    <action selector="goToSecondWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JwM-JZ-mpi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -240,7 +249,7 @@
             <objects>
                 <viewController id="xAY-fS-NFx" customClass="secondViewController" customModule="dec42017" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6bO-zk-IPw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dw2-7M-U7Q">
